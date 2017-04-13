@@ -1,0 +1,3 @@
+{% load custom_tags %}"username", "birthday", "eligible", "number", "bizzfuzz"
+{% for user in users %}"{{ user.username|addslashes }}", "{{ user.birthday|addslashes }}", "{{ user.birthday|allowed|addslashes }}", "{{ user.number|addslashes }}", "{{ user.number|fizzbuzz|addslashes }}"
+{% endfor %}

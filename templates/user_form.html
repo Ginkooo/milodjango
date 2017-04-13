@@ -1,0 +1,18 @@
+{% extends 'shared/base.html' %}
+
+{% block content %}
+<h2>Fill gaps to {{ action }} user!</h2>
+<form action="" method="post">
+	{% csrf_token %}
+	{% for field in form %}
+		<div class="formfield">
+			{{ field.errors }}
+			{{ field.label_tag }} {{ field }}
+			{% if field.help_text %}
+			<p class="help">{{ field.help_text|safe }}</p>
+			{% endif %}
+		</div>
+	{% endfor %}
+	<input type="submit" value="{{ action|capfirst }}">
+</form>
+{% endblock content %}

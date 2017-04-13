@@ -1,0 +1,30 @@
+{% extends 'shared/base.html' %}
+{% load custom_tags %}
+
+{% block title %} User view{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table">
+				<thead>
+					<tr>
+						<td>Username</td>
+						<td>Birthday</td>
+						<td>Eligible</td>
+						<td>Random Number</td>
+						<td>BizzFuzz</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{ user.username }}</td>
+						<td>{{ user.birthday|date:'n-j-Y' }}</td>
+						<td>{{ user.birthday|allowed }}</td>
+						<td>{{ user.number }}</td>
+						<td>{{ user.number|fizzbuzz }}</td>
+					</tr>
+				</tbody>
+		</div>
+	</div>
+{% endblock content %}
