@@ -18,6 +18,10 @@ CSB is in `users.csv`
 How to use it
 =============
 
+To populete db with some data run:
+
+`./manage.py populatedb`
+
 You have a few places to go:
 
 * / - Displays users in a table
