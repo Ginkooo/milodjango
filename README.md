@@ -35,6 +35,7 @@ What's done
  * One displaying 'allowed' if user is over 13 years old, 'blocked' otherwise
  * Second displaying BizzFuzz string depending on random-generated number (Specific to every user)
 - Exporting to CSV with a button
+- If fatal error occurs, or there is some success information, user is redirected to the / and message is showed to him through message framework
 - url resolve tests
 
 What's not done
