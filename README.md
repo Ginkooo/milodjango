@@ -12,8 +12,8 @@ Step 2 can be skipped, it's just for creating separate python environment
 3. ./manage.py migrate
 4. ./manage.py runserver
 
-Sreens are in `/screens`
-CSB is in `users.csv`
+Screens are in `/screens`
+CSV is in `users.csv`
 
 How to use it
 =============
